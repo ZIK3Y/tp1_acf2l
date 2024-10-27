@@ -1,0 +1,321 @@
+.logo {
+    margin-top: 2%;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-accueil {
+    color:white;
+    padding-top: 75px;
+}
+
+.text-accueil h2 {
+    padding-left: 20px;
+    line-height: 3rem;
+}
+
+section {
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 40px;
+    z-index: 30;
+}
+
+#moyen-pedagogiques, #moyen-pedagogiques-2, #contact {
+    background-color: #4181CB;
+    color:#ffffff;
+    z-index: 30;
+}
+
+.titre-container{
+        text-shadow: 0px 2px 2px #312783;
+        position: relative;
+        text-align: center;
+        top: 0px;
+        padding: 10px 20px;
+        z-index: 1;
+}
+
+.vertical-line-pedagogiques {
+    position: absolute;
+    top: 50;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+  }
+
+  .text-md-center{
+    z-index: 2;
+  }
+
+.liste-pedago {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top:25px;
+    z-index: 5;
+    left:17%;
+    text-align: center;
+}
+
+
+.liste-1-pedago, .liste-2-pedago, .liste-3-pedago {
+    flex: 1;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    list-style: none;
+}
+
+.liste-1-pedago ul { text-align: left; }
+.liste-2-pedago ul { text-align: left; }
+.liste-3-pedago ul { text-align: left; }
+
+    .degrade-fond-ulm {
+        background: linear-gradient(to bottom, #ffffff, #A4C3E6, #4181CB);
+        height: 100px;
+    }
+
+    .degrade-fond-tarifs {
+        background: linear-gradient(to top, #ffffff, #A4C3E6, #4181CB);
+        height: 100px;
+    }
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 180px;
+    height: 100%;
+    background-color: #C9F0FF;
+    padding: 5px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+#sidebar.active {
+    left: 0;
+}
+#sidebar ul {
+    list-style-type: none;
+    padding: -10;
+    margin-top: 150px;
+}
+#sidebar ul li {
+    margin: 50px 0;
+}
+#sidebar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    color: rgb(0, 0, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 90px;
+    background-color: #6AD1F9;
+}
+
+        .menu-tab {
+            position: fixed;
+            top: 0; 
+            left: 0;
+            width: 30px;
+            height: 100%;
+            z-index: 1050;
+            transition: background-color 0.3s;
+        }
+
+        .menu-tab-visible {
+            position: fixed;
+            top: 50%; 
+            left: 0;
+            width: 30px;
+            height: 100px;
+            background-color: #C9F0FF;
+            z-index: 1049;
+            box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.35);
+        }
+
+        .hover-zone {
+            display: none; 
+        }
+
+        .mobile-menu {
+            display: none; 
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 2000;
+            cursor: pointer;
+            font-size: 30px;
+            color: #6AD1F9;
+        }
+
+
+
+/* Le responsive est cassé*/
+
+        @media (max-width: 768px) {
+            .menu-tab-visible, .menu-tab {
+                display: none;
+            }
+
+            h1,h2 {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                text-align: center;
+            }
+            .hover-zone {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            #sidebar {
+                width: 250px;
+            }
+
+            #moyenpedago, #contact {
+                height: 100vh;
+                padding: 40px;
+                background-color: #4181CB;
+            }
+
+            .contact-section {
+                margin-left: -40px;
+                margin-right: -40px;
+                margin-top: -40px;
+                background-color: #ffffff;
+                border-radius: 0 0 60% 60% / 30%;
+                box-shadow: 0px 15px 4px 0px rgba(0,0,0,0.25);
+            }
+
+        }
+
+        /* Ligne pour la section CONTACT */
+        .contact-section {
+            margin-left: -40px;
+            margin-right: -40px;
+            margin-top: -40px;
+            background-color: #ffffff;
+            padding: 150px 0;
+            border-radius: 0 0 60% 60% / 30%;
+            position: relative;
+            box-shadow: 0px 15px 4px 0px rgba(0,0,0,0.25);
+            z-index: 5;
+        }
+        .contact-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .texte-contact h2 {
+            padding: 70px;
+            color: #ffffff;
+            font-size: 3rem;
+            margin-bottom: -10px;
+        }
+
+        .texte-contact p {
+            color: #ffffff;
+            text-align: left;
+            padding-left: 31.25%;
+            font-size: 1.8rem;
+            line-height: 1.8;
+        }
+
+        .full-screen-img {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .logo {
+            position: absolute;
+            z-index: 5;
+        }
+
+        #accueil {
+            position: relative;
+            z-index: 30;
+            background-color: transparent;
+            padding-top: 25vh;
+            font-family: "Lexend Deca", sans-serif;
+        }
+
+        #nos-activites {
+            position: relative;
+            z-index: 30;
+            background-color: transparent;
+            padding-top: 25vh;
+            font-family: "Lexend Deca", sans-serif;
+        }
+
+        #categories-ulm {
+            position: relative;
+            z-index: 30;
+            background-color: transparent;
+            padding-top: 0vh;
+            font-family: "Lexend Deca", sans-serif;
+        }
+
+        .content-img img {
+            background-color: white;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 7px;
+            padding-bottom: 7px;
+        }
+
+        .titre-activites {
+            color: #312783;
+            text-shadow: 0px 2px 2px #2e2e2e;
+            padding-bottom: 5vh;
+            font-family: "Lexend Deca", sans-serif;
+        }
+        
+        .titre-container h4 {
+            padding-top: 75px;
+            text-shadow: 0px 2px 2px #312783;
+        }
+
+        .titre-ulm {
+            color: #312783;
+            text-shadow: 0px 2px 2px #2e2e2e;
+            padding-bottom: 5vh;
+            font-family: "Lexend Deca", sans-serif;
+        }
+
+        .haut-texte {
+            font-weight: bolder;
+        }
+
+        .haut-milieu, .haut-bas {
+            font-weight: 200;
+        }
+
+        .price {
+            display: inline;
+            font-weight: bolder;
+        }
+
+        .footer {
+            margin-top: 300px;
+            text-shadow: 0px 2px 2px #312783;
+        }
